@@ -20,7 +20,7 @@ public class EMDAlertController: UIViewController {
     var alertCancelButtonTextColor: UIColor?
     
     let rootVC = UIApplication.shared.keyWindow?.rootViewController
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         let containerAppearance = PopupDialogContainerView.appearance()

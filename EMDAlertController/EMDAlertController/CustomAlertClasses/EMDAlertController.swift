@@ -27,7 +27,11 @@ public class EMDAlertController: UIViewController {
         containerAppearance.backgroundColor = .clear
         
     }
-    
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let containerAppearance = PopupDialogContainerView.appearance()
+        containerAppearance.backgroundColor = .clear
+    }
     public func showAlert(title: String?, message: String?, alertType: AlertType, image: AlertImage, buttonBackground: ButtonBackgroundColor, buttonTextColor: ButtonTextColor, okAction: String = "Dismiss", handler: (() -> Void)?) {
         
         switch image {

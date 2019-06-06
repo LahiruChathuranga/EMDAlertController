@@ -38,8 +38,8 @@
 		849F7F8622A8B0DB0008A1E6 /* InfoAlertXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoAlertXib.xib; sourceTree = "<group>"; };
 		849F7F8722A8B0DB0008A1E6 /* WarningAlertXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WarningAlertXib.xib; sourceTree = "<group>"; };
 		849F7F8822A8B0DB0008A1E6 /* SuccessAlertXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuccessAlertXib.xib; sourceTree = "<group>"; };
-		849F7F8922A8B0DB0008A1E6 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		849F7F8A22A8B0DB0008A1E6 /* EMDAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMDAlertController.swift; sourceTree = "<group>"; };
+		849F7F8922A8B0DB0008A1E6 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = ../Constant.swift; sourceTree = "<group>"; };
+		849F7F8A22A8B0DB0008A1E6 /* EMDAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EMDAlertController.swift; path = ../EMDAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +72,8 @@
 		849F7F7222A8B0370008A1E6 /* EMDAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				849F7F8922A8B0DB0008A1E6 /* Constant.swift */,
 				849F7F7D22A8B0DB0008A1E6 /* CustomAlertClasses */,
 				849F7F8322A8B0DB0008A1E6 /* CustomAlertXibs */,
-				849F7F8A22A8B0DB0008A1E6 /* EMDAlertController.swift */,
 				849F7F7322A8B0370008A1E6 /* EMDAlertController.h */,
 				849F7F7422A8B0370008A1E6 /* Info.plist */,
 				849F7F7B22A8B0650008A1E6 /* Media.xcassets */,
@@ -90,6 +88,8 @@
 				849F7F7F22A8B0DB0008A1E6 /* InfoAlertXib.swift */,
 				849F7F8022A8B0DB0008A1E6 /* ErrorAlertXib.swift */,
 				849F7F8122A8B0DB0008A1E6 /* SuccessAlertXib.swift */,
+				849F7F8922A8B0DB0008A1E6 /* Constant.swift */,
+				849F7F8A22A8B0DB0008A1E6 /* EMDAlertController.swift */,
 				849F7F8222A8B0DB0008A1E6 /* ConfirmationAlertXib.swift */,
 			);
 			path = CustomAlertClasses;

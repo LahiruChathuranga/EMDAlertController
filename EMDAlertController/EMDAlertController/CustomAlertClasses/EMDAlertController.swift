@@ -13,13 +13,13 @@ public class EMDAlertController: UIViewController {
     
     public static let shared = EMDAlertController()
     
-    var alertImage: UIImage?
-    var alertButtonColor: UIColor?
-    var alertButtonTextColor: UIColor?
-    var alertCancelButtonColor: UIColor?
-    var alertCancelButtonTextColor: UIColor?
+    public var alertImage: UIImage?
+    public var alertButtonColor: UIColor?
+    public var alertButtonTextColor: UIColor?
+    public var alertCancelButtonColor: UIColor?
+    public var alertCancelButtonTextColor: UIColor?
     
-    let rootVC = UIApplication.shared.keyWindow?.rootViewController
+    public let rootVC = UIApplication.shared.keyWindow?.rootViewController
     public override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -181,21 +181,21 @@ public class EMDAlertController: UIViewController {
         rootVC!.present(popup, animated: true, completion: nil)
     }
 }
-enum AlertType {
+public enum AlertType {
     case success
     case error
     case info
     case warning
 }
-enum AlertImage {
+public enum AlertImage {
     case original
     case customImage(image: UIImage)
 }
-enum ButtonTextColor {
+public enum ButtonTextColor {
     case original
     case customColor(color: UIColor)
 }
-enum ButtonBackgroundColor {
+public enum ButtonBackgroundColor {
     case original
     case customColor(color: UIColor)
 }

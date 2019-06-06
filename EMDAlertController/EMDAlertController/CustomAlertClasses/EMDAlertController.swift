@@ -28,7 +28,7 @@ public class EMDAlertController: UIViewController {
         
     }
     
-    func showAlert(title: String?, message: String?, alertType: AlertType, image: AlertImage, buttonBackground: ButtonBackgroundColor, buttonTextColor: ButtonTextColor, okAction: String = "Dismiss", handler: (() -> Void)?) {
+    public func showAlert(title: String?, message: String?, alertType: AlertType, image: AlertImage, buttonBackground: ButtonBackgroundColor, buttonTextColor: ButtonTextColor, okAction: String = "Dismiss", handler: (() -> Void)?) {
         
         switch image {
         case .customImage(image: let _image):
@@ -77,7 +77,7 @@ public class EMDAlertController: UIViewController {
         }
     }
     
-    func showConfirmationAlert(title: String?, message: String?, image: AlertImage, cancelButtonBackground: ButtonBackgroundColor, cancelButtonTextColor: ButtonTextColor,  okButtonBackground: ButtonBackgroundColor, okButtonTextColor: ButtonTextColor, cancelAction: String = "Cancel", okAction: String = "Ok", handler: @escaping (() -> Void)) {
+    public func showConfirmationAlert(title: String?, message: String?, image: AlertImage, cancelButtonBackground: ButtonBackgroundColor, cancelButtonTextColor: ButtonTextColor,  okButtonBackground: ButtonBackgroundColor, okButtonTextColor: ButtonTextColor, cancelAction: String = "Cancel", okAction: String = "Ok", handler: @escaping (() -> Void)) {
         switch image {
         case .customImage(image: let _image):
             alertImage = _image

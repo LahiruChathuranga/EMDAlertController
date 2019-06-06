@@ -11,7 +11,7 @@ import PopupDialog
 
 public class EMDAlertController: UIViewController {
     
-    static let shared = EMDAlertController()
+    public static let shared = EMDAlertController()
     
     var alertImage: UIImage?
     var alertButtonColor: UIColor?

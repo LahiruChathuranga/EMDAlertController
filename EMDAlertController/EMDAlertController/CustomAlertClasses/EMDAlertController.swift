@@ -18,13 +18,14 @@ public class EMDAlertController: UIViewController {
     public var alertButtonTextColor: UIColor?
     public var alertCancelButtonColor: UIColor?
     public var alertCancelButtonTextColor: UIColor?
+    public let containerAppearance = PopupDialogContainerView.appearance()
     
     public let rootVC = UIApplication.shared.keyWindow?.rootViewController
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        let containerAppearance = PopupDialogContainerView.appearance()
-        containerAppearance.backgroundColor = .clear
+        
+        
         
     }
     public override func viewWillAppear(_ animated: Bool) {
@@ -33,6 +34,7 @@ public class EMDAlertController: UIViewController {
         containerAppearance.backgroundColor = .clear
     }
     public func showAlert(title: String?, message: String?, alertType: AlertType, image: AlertImage, buttonBackground: ButtonBackgroundColor, buttonTextColor: ButtonTextColor, okAction: String = "Dismiss", handler: (() -> Void)?) {
+        containerAppearance.backgroundColor = .clear
         
         switch image {
         case .customImage(image: let _image):
@@ -82,6 +84,7 @@ public class EMDAlertController: UIViewController {
     }
     
     public func showConfirmationAlert(title: String?, message: String?, image: AlertImage, cancelButtonBackground: ButtonBackgroundColor, cancelButtonTextColor: ButtonTextColor,  okButtonBackground: ButtonBackgroundColor, okButtonTextColor: ButtonTextColor, cancelAction: String = "Cancel", okAction: String = "Ok", handler: @escaping (() -> Void)) {
+        containerAppearance.backgroundColor = .clear
         switch image {
         case .customImage(image: let _image):
             alertImage = _image

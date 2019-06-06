@@ -9,7 +9,7 @@
 import UIKit
 import PopupDialog
 
-class EMDAlertController: UIViewController {
+public class EMDAlertController: UIViewController {
     
     static let shared = EMDAlertController()
     

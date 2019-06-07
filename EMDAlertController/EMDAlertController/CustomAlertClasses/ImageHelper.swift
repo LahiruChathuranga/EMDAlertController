@@ -11,7 +11,7 @@ class ImageHelper {
     class func loadImage(name: String?) -> UIImage? {
         if let n = name {
             let podBundle = Bundle(for: ImageHelper.self)
-            if let url = podBundle.url(forResource: "CDAlertView", withExtension: "bundle") {
+            if let url = podBundle.url(forResource: "EMDAlertController", withExtension: "bundle") {
                 let bundle = Bundle(url: url)
                 return UIImage(named: n, in: bundle, compatibleWith: nil)
             }
